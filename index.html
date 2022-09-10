@@ -1,0 +1,578 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta name="viewport" content="width:device-width" , initial-scale="1.0">
+	<title>
+		Mohit Chauhan - web devloper
+	</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Quicksand&family=Qwitcher+Grypen&display=swap');
+
+		html {
+
+
+			scroll-behavior: smooth;
+		}
+
+		* {
+			margin: 0;
+			padding: 0;
+			font-family: 'Cormorant Garamond', serif;
+		}
+
+		body {
+			/* background-color: rgb(66, 61, 61); */
+			/* background-size: auto; */
+			background-image: url("main.jpg");
+			background-size: cover;
+			background-attachment: fixed;
+		}
+
+		.sidebar {
+			top: 0px;
+			width: 100vw;
+			height: 90px;
+			display: flex;
+			align-items: center;
+			justify-content: right;
+			position: fixed;
+			background-color: black;
+			overflow: hidden;
+			box-shadow: 10px 0px 10px 0px gray;
+			opacity: 80%;
+
+
+		}
+
+
+
+		.sidebar a {
+			font-weight: 1000;
+			padding: 33px;
+			font-size: 30px;
+
+		}
+
+		.sidebar a:hover,
+		.sidebar a:active {
+
+			font-size: 40px;
+			/* text-decoration: underline; */
+			color: gray;
+			transition-delay: 0.5s;
+
+
+		}
+
+
+		.main {
+			width: auto;
+			height: auto;
+
+		}
+
+
+
+
+
+		.infocontainer {
+
+			height: 100%;
+			width: 100%;
+			margin-bottom: 20rem;
+			padding-top: 187px;
+			color: white;
+
+
+		}
+
+		.info {
+
+			background-image: url("info.jpg");
+			background-size: 100%;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			/* border: 2px solid white; */
+			padding: 150px;
+			color: white;
+			border-radius: 50px;
+			margin-left: 5%;
+			margin-right: 5%;
+
+		}
+
+
+
+
+
+		.intro {
+			background-image: url("intro.jpeg");
+			background-attachment: fixed;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-size: 100vw 100vh;
+			margin: 50px;
+
+			border-radius: 50px;
+			padding: 20%;
+		
+			height: 100vh;
+		
+			color: white;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		.blogcontainer {
+
+			height: 100vh;
+			padding-bottom: 250px;
+			padding-top: 35px;
+			color: white
+		}
+
+		.contactform {
+			height: 100vh;
+			padding-bottom: 100px;
+			padding-top: 70px;
+			color: white;
+
+		}
+
+		.blog1 {
+			background-image: url("project.jpeg");
+			background-attachment: fixed;
+			background-size: 100vw 100vh;
+
+			/* border: 2px solid  white; */
+			margin: 50px;
+			padding-left: 150px;
+			padding-top: 20px;
+			padding-bottom: 10px;
+			border-radius: 50px;
+
+		}
+
+
+		.hello {
+			font-size: 80px;
+			color: white;
+		}
+
+		.name {
+			font-size: 50px;
+			font-weight: bold;
+			color: white;
+		}
+
+		.about {
+			font-size: 30px;
+			color: white;
+
+		}
+
+		.button {
+			margin-top: 35px;
+		}
+
+		.button button {
+
+			padding: 9px 14px;
+			border-radius: 22px;
+			color: white;
+			background-color: black;
+			font-weight: bold;
+			font-size: 21px;
+			margin: 0 3px;
+			cursor: pointer;
+		}
+
+		.button button:hover {
+			color: black;
+			background-color: white;
+			transition-delay: 0.3s;
+		}
+
+		.sidebar a {
+			text-decoration: none;
+			color: white;
+		}
+
+		.skillcontainer {
+			padding: 12px;
+		}
+
+
+		.skillitem {
+			margin-top: 15px;
+			align-items: ccenter;
+			font-size: 30px;
+			color: white;
+		}
+
+
+
+		.infoh {
+			color: gray;
+			padding: 9px 14px;
+			border-radius: 22px;
+
+			/* background-color: rgb(40, 33, 33); */
+			font-weight: bold;
+			/* font-size: 21px; */
+			margin: 0 3px;
+			text-decoration: none;
+			box-shadow: inset 2px 2px 2px 2px gray;
+		}
+
+		.infoh2 {
+			color: blanchedalmond;
+			text-decoration: none;
+
+		}
+
+		.infop {
+			color: white;
+		}
+
+
+		.skill {
+			background-color: red;
+			border: 2px solid white;
+			margin: 5px;
+		}
+
+		.hundred {
+			width: 265px;
+			background-color: red;
+			border: 2px solid white;
+		}
+
+		.fifty {
+			width: 135px;
+			background-color: yellow;
+			border: 2px solid white;
+		}
+
+		.t5 {
+			width: 85px;
+			background-color: aqua;
+			border: 2px solid white;
+		}
+
+
+
+		p {
+			margin-top: 20px;
+			font-size: 30px;
+			color: white;
+		}
+
+		h1 {
+
+			color: white;
+			text-decoration: underline;
+		}
+
+
+
+		.intro2 {
+			/* border: 5px solid white; */
+			/* width: 50vw; */
+			margin-left: 30px;
+			
+		
+			/* padding: 80px; */
+			border-radius: 25%;
+			margin: 40px;
+			/* box-shadow: inset 5px 5px 5px 5px gray; */
+
+
+		}
+
+		.intro1 {
+			/* border: 5px solid white; */
+			border-radius: 25%;
+		
+			
+			/* width: 50vw; */
+			/* padding: 80px; */
+			margin: 40px;
+			/* box-shadow: inset 5px 5px 5px 5px gray; */
+
+		}
+
+		.blogitem1 {
+			margin-top: 60px;
+			margin-left: 100px;
+
+		}
+
+		.blogitem {
+			margin-top: 20px;
+			margin-left: 100px;
+		}
+
+		.blogcontainer h2 {
+			weight: bold;
+
+		}
+
+
+
+
+
+		.btn:hover {
+			color: black;
+			background-color: gray;
+			cursor: pointer;
+		}
+
+		.btn {
+
+			padding: 9px 20px;
+			border-radius: 22px;
+			color: black;
+			background-color: rgb(88, 84, 84);
+			font-weight: bold;
+			font-size: 21px;
+			margin: 0 3px;
+			cursor: pointer;
+			margin-left: 150px;
+			margin-top: 20px;
+		}
+
+
+
+
+
+
+		input {
+			padding: 10px 11px;
+			width: 50vw;
+			margin-left: 150px;
+			background-color: gray;
+			border-radius: 10px;
+			color: white;
+
+		}
+
+		#emailHelp {
+			font-size: 10px;
+			font-color: white;
+			margin-left: 150px;
+		}
+
+		label {
+			font-size: 30px;
+			margin-left: 150px;
+			color: white;
+
+		}
+
+		.form-check-input {
+			width: 2vw;
+		}
+
+		.form-label {
+			padding: 20px;
+		}
+
+		.formheading {
+			padding-left: 160px;
+			font-size: 35px;
+			text-decoration: none;
+
+		}
+
+		.education {
+
+			border-left: 5px solid gray;
+			padding-left: 15px;
+		}
+
+		@media (max-width:600px) {
+
+			
+			.intro {
+			background-image: url("intro.jpeg");
+			background-attachment: fixed;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-size: 100vw 100vh;
+			margin: 50px;
+
+			border-radius: 50px;
+			padding: 10%;
+		
+			height: 100vh;
+		
+			color: white;
+			
+		}
+
+
+		}
+	</style>
+
+
+</head>
+
+<body>
+
+	<div class="sidebar">
+
+
+
+		<a href="#home">home</a>
+		<a href="#intro">my intro</a>
+		<a href="#project">Projects</a>
+		<a href="#contact">contact</a>
+
+
+	</div>
+
+	<div class="main">
+
+
+		<div class="infocontainer" id="home">
+			<div class="info">
+				<div class="hello">Hi I'M</div>
+				<div class="name">mohit chauhan</div>
+				<div class="about">I'm a software devloper...</div>
+				<div class="button">
+					<a href="https://www.instagram.com/its_mohit_chauhan_/">
+						<button>Insta</button></a>
+					<a href="#intro">
+						<button>about me</button></a>
+				</div>
+			</div>
+
+		</div>
+		<div class="intro" id="intro">
+			<div class="intro1">
+				<h1 class="infoh">ABOUT</h1>
+				<p>Now i'm in ahmedabad for my graduation....</p>
+				<br><br>
+				<h1 class="infoh">MY SKILLS</h1>
+				<div class="skillcontainer">
+					<div class="skillitem">HTML:<br>
+						<div class="skill hundred"> </div>
+					</div>
+					<div class="skillitem">CSS:<br>
+						<div class="skill t5"> </div>
+					</div>
+					<div class="skillitem">J-SCRIPT:<br>
+						<div class="skill fifty"> </div>
+					</div>
+					<div class="skillitem">PHP:<br>
+						<div class="skill hundred"> </div>
+					</div>
+					<div class="skillitem">PYTHON:<br>
+						<div class="skill hundred"> </div>
+					</div>
+				</div>
+
+
+			</div>
+			<div class="intro2">
+				<h1 class="infoh">EDUCATION</h1>
+				<br><br>
+
+				<div>
+					<h2 class="infoh2">SCHOOL</h2>
+				</div>
+
+				<div class="education">
+					<p><strong>10th</strong> </p>
+					<p>Gajera group of schools,surat..</p>
+					<p><strong>12th</strong></p>
+					<p>Shree swaminarayan gurkul (ssga),ahmedabad....</p>
+				</div>
+				<br><br>
+				<div>
+					<h2 class="infoh2">COLLAGE(BCA)</h2>
+
+				</div>
+				<div class="education">
+					<p>somlalit institute for computer application-slica...
+					</p>
+				</div>
+
+
+
+
+			</div>
+		</div>
+
+		<div class="blogcontainer" id="project">
+			<div class="blog1">
+				<h1 class="infoh2"> PROJECTS</h1>
+				<div class="blogitem1">
+					<h2>clone of amazon</h2>
+					<p> </p>
+				</div>
+				<a href="comesoon.html"><button class="btn">read more</button></a>
+				<div class="blogitem">
+					<h2>flipcart clone</h2>
+					<p> </p>
+				</div>
+				<a href="comesoon.html"><button class="btn">read more</button></a>
+				<div class="blogitem">
+					<h2>personal portfolio</h2>
+					<p> </p>
+				</div>
+				<a href="comesoon.html"><button class="btn">read more</button></a>
+				<div class="blogitem">
+					<h2>cunstruction web</h2>
+					<p> </p>
+				</div>
+				<a href="comesoon.html"><button class="btn">read more</button></a><br><br><br>
+			</div>
+		</div>
+
+		<div class="contactform" id="contact">
+			<h1 class="formheading">CONTACT ME FOR WORK OR GENERAL INQUERIES....</h1><br><br>
+			<form>
+
+				<div class="mb-3">
+					<label for="exampleInputname" class="form-label">name</label><br>
+					<input type="text" class="form-control" id="exampleInputname" aria-describedby="emailHelp">
+
+				</div>
+				<div class="mb-3">
+					<label for="exampleInputEmail1" class="form-label">Email address</label><br>
+					<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+				</div>
+				<div class="mb-3">
+					<label for="clintefone" class="form-label">Phone</label><br>
+					<input type="phone" class="form-control" id="clintefone">
+				</div>
+				<div id="emailHelp" class="form-text">We'll never share your email or phone with anyone else.
+				</div>
+				<div class="mb-3">
+					<label for="exampleInputenquiry" class="form-label">Enquiry</label><br>
+					<input type="text" class="form-control" id="exampleInputEnquiry" aria-describedby="emailHelp">
+
+				</div><br>
+
+				<div class="mb-3 form-check">
+					<input type="checkbox" class="form-check-input" id="exampleCheck1"><br>
+					<label class="form-check-label" for="exampleCheck1">i have some work for you</label>
+				</div>
+				<div>
+					<button type="submit" class="btn">Submit</button>
+				</div>
+			</form>
+		</div>
+
+
+
+	</div>
+
+</body>
+
+</html>
